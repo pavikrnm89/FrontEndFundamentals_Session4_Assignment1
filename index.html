@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Speech Bubble using CSS3</title>
+<style>
+.bubble{
+    background-color:green;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    width:120px;
+    height:70px;
+	 border-radius: 25px
+}
+.bubble::before {
+    background-color:green;
+    content: "\00a0";
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    transform:rotate( 29deg ) skew( -35deg );
+     width:  28px;
+}
+.me {
+    float: left;   
+    margin: 2px 45px 5px 20px;         
+}
+.me::before {
+		box-shadow: -1px 1px 1px 7px green;
+        left: -6px;
+        top: 29px;
+}
+</style>
+</head>
+<body>
+    <div class="bubble me"></div>
+</body>
+</html>
